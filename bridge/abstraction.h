@@ -5,7 +5,7 @@
 
 class Abstraction {
 	public:
-		Abstraction() {
+		Abstraction(Implementor*) {
 		}
 
 		virtual ~Abstraction() {

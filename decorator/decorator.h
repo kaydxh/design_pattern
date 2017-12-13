@@ -8,6 +8,7 @@ class Decorator : public Component {
 		Decorator(Component* comp);
 		virtual ~Decorator();
 
+		virtual void operation();
 	protected:
 		Component* comp_;
 };

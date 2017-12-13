@@ -9,6 +9,10 @@ Decorator::Decorator(Component* comp)
 Decorator::~Decorator() {
 }
 
+void Decorator::operation() {
+	comp_->operation();
+}
+
 ConcreteDecorator::ConcreteDecorator(Component* comp)
 	: Decorator(comp) {
 }
