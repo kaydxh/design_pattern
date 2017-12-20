@@ -2,8 +2,7 @@
 #include <iostream>
 using namespace std;
 
-Subject::Subject()
-	: m_subjectState_(-1) {
+Subject::Subject() {
 }
 
 Subject::~Subject() {
@@ -34,7 +33,8 @@ void Subject::Notify() {
 	}
 }
 
-ConcreteSubject::ConcreteSubject() {
+ConcreteSubject::ConcreteSubject() 
+	: m_subjectState_(-1) {
 }
 
 ConcreteSubject::~ConcreteSubject() {

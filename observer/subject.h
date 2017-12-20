@@ -19,7 +19,6 @@ class Subject {
 		virtual void SetState(int state) = 0;
 		virtual int GetState() = 0;
 	protected:
-		int m_subjectState_;
 		vector<Observer*> observers_;
 };
 
@@ -30,5 +29,8 @@ class ConcreteSubject : public Subject {
 
 		virtual void SetState(int state);
 		virtual int GetState();
+	
+	private:
+		int m_subjectState_;
 };
 #endif 

@@ -3,14 +3,14 @@
 #include <iostream>
 using namespace std;
 
-Observer::Observer()
-	: objectState_(-1) {
+Observer::Observer() {
 }
 
 Observer::~Observer() {
 }
 
-ConcreteObserver::ConcreteObserver() {
+ConcreteObserver::ConcreteObserver()
+	: objectState_(-1) {
 }
 
 ConcreteObserver::~ConcreteObserver() {

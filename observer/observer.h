@@ -10,8 +10,6 @@ class Observer {
 
 		virtual void update(Subject*) = 0;
 
-	protected:
-		int objectState_;
 };
 
 class ConcreteObserver : public Observer {
@@ -21,6 +19,8 @@ class ConcreteObserver : public Observer {
 
 		virtual void update(Subject*);
 
+	protected:
+		int objectState_;
 	
 };
 #endif
